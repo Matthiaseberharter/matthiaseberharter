@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthias Eberharter – Komponist Musiktheoretiker</title>
+  <meta name="description" content="Offizieller Webauftritt des Komponisten – Werkverzeichnis, Notenshop, Medien, Blog, News und Kontakt." />
+  <style>
+    :root{
+      --bg:#0c0c0e;           /* Hintergrund dunkel */
+      --paper:#111216;        /* Karten/Abschnitte */
+      --text:#ececf1;         /* Haupttext */
+      --muted:#b7b7be;        /* Sekundärtext */
+      --accent:#d2b55b;       /* Gold-Akzent */
+      --line:#22232a;         /* Linien */
+      --maxw:1100px;          /* Inhaltsbreite */
+    }
+    /* Reset/Grundlayout */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    a.button, button.button{display:inline-block;border:1px solid var(--line);padding:.75rem 1rem;border-radius:999px}
+    a.button:hover, button.button:hover{border-color:var(--accent);color:var(--accent)}
+    .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:1.2rem}
+    .section{padding:64px 0;border-top:1px solid var(--line)}
+    h1,h2,h3{font-family:ui-serif,Georgia,Cambria,"Times New Roman",Times,serif;line-height:1.2;margin:0 0 .5rem}
+    h1{font-size:clamp(2rem,5vw,3.25rem);letter-spacing:.2px}
+    h2{font-size:clamp(1.5rem,3.2vw,2rem);margin-bottom:.75rem}
+    h3{font-size:1.125rem;margin-top:1.25rem}
+    p{margin:0 0 1rem}
+    .muted{color:var(--muted)}
+    .pill{border:1px solid var(--line);border-radius:999px;padding:.35rem .75rem;font-size:.85rem;color:var(--muted)}
+
+    /* Header/Nav */
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(12,12,14,.95),rgba(12,12,14,.7));backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+    .brand{display:flex;flex-direction:column}
+    .brand__name{font-family:ui-serif,Georgia,serif;font-weight:600;font-size:1.25rem}
+    .brand__role{font-size:.875rem;color:var(--muted)}
+    nav ul{list-style:none;display:flex;gap:.75rem;align-items:center;margin:0;padding:0}
+    nav a{padding:.5rem .75rem;border-radius:10px}
+    nav a:hover{background:#12131a;color:var(--accent)}
+    .cta{border-color:var(--accent);color:var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;align-items:end;padding:56px 0}
+    .hero .cover{aspect-ratio:16/10;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#14151b}
+    .hero .lede p{max-width:55ch}
+    .quicklinks{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+
+    /* Cards/Grids */
+    .grid{display:grid;gap:1rem}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid-2,.grid-3{grid-template-columns:1fr}
+    }
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:1rem}
+    .card h3{margin:.25rem 0 .25rem}
+
+    /* Lists */
+    .list{display:flex;flex-direction:column;gap:.75rem}
+    .list li{list-style:none;padding:.75rem 1rem;border:1px solid var(--line);border-radius:14px;background:#0f1014}
+
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted)}
+
+    /* Small utilities */
+    .row{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+    .space{height:1rem}
+    .sep{height:1px;background:var(--line);margin:1rem 0}
+    .right{margin-left:auto}
+    .center{text-align:center}
+  </style>
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header aria-label="Hauptnavigation">
+    <div class="wrap nav">
+      <a href="#start" class="brand">
+        <span class="brand__name">Matthias Eberharter</span>
+        <span class="brand__role">Komponist / Musiktheoretiker</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#ueber">Über mich</a></li>
+          <li><a href="#werkverzeichnis">Werkverzeichnis</a></li>
+          <li><a href="#shop">Notenshop</a></li>
+          <li><a href="#medien">Medien</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#kontakt" class="button cta">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="start">
+    <!-- HERO / TITELBEREICH -->
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="cover">
+        <img src="DES_8210.jpg" alt="Portrait am Klavier" loading="eager" />
+      </div>
+      <div class="lede">
+        <h1 id="hero-title">Zeitgenössische Musik für unterschiedliche Besetzungen</h1>
+        <p class="muted">Meine Musik ist eine Kunst der Extremen. Ich komponiere narrative Stücke sowie Klangwelten, zeitgenössisch sowie klassisch, absolute Musik und Konzeptkunst. Einzig die Konsequenz in der Treue zur Idee verbindet alle meine Musik. Auf dieser Seite finden Sie Noten, Medien, Blog und aktuelle Termine.</p>
+        <div class="quicklinks">
+          <a class="button" href="#werkverzeichnis">Werkverzeichnis</a>
+          <a class="button" href="#shop">Notenshop</a>
+          <a class="button" href="#medien">Videos & Audios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜBER MICH -->
+    <section id="ueber" class="section" aria-labelledby="about-title">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2 id="about-title">Über mich</h2>
+          <p>Matthias Eberharter (Jahrgang 2004) ist ein österreichischer Komponisitionsstudent an der <em>Universität für Musik und darstellende Kunst Wien</em> Seine Arbeiten wurden unter anderem vom <em>Chorverband Österreich</em> und dem <em>Lironema-Quartett</em> uraufgeführt.</p>
+          <p class="muted">Matthias Eberharter, geboren am 20.09.2004 in Graz, aufgewachsen in Mayrhofen, lernte schon früh verschiedene Instrumente wie Trompete und Steirische Harmonika und spielte jahrelang in der Musikkapelle Mayrhofen. In seiner Jugend kam dann noch Schlagwerk- und Klavierunterricht hinzu und er begann mit 14 Jahren hauptsächlich für Klavier und sinfonisches Blasorchester zu komponieren. 2019 kam Matthias dann ans Borg Schwaz in den Musikzweig, wo er seine musikalischen Talente vertiefen konnte. Nebenbei besuchte er  im Schuljahr 2022/23 in Innsbruck beim Chorverband Tirol den Kinder- und Jugendchorleitugslehrgang. Direkt nach der Matura begann Matthias den Vorbereitungslehrgang für Komposition an der Universität für Musik und darstellende Kunst Wien. Im September 2024 durfte Matthias an der Kompositionswerkstatt Evensong unter der kompositorischen Leitung von Wolfgang Sauseng und der musikalischen Leitung von Manuel Schuen vom Chorverband Österreich teilnehmen. Seine dort entstandenen Kompositionen wurden im November 2024 in der Stiftskirche Schlägl uraufgführt. Seit Oktober 2024 studiert Matthias nun an der mdw bei Gerald Resch Komposition und Musiktheorie. Im Zuge von Studienkonzerten in den ersten Semestern wurde sein elektronische Stück „Fuchs, du hast die Gans gestohlen“ im Echoraum Wien uraufgeführt. Das selbe Stück wurde vom Lironema-Quartett in einer Version für Streicher und Elektronik an der mdw präsentiert. Neben seinem Studium leitete er im Schuljar 2023/24 auch den Jugendchor der Seestimmen. </p>
+          <div class="row">
+            <span class="pill">• Partituren • Uraufführungen • Auftragswerke</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="DES_8240.jpg" alt="Arbeitsszene im Studio" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- WERKVERZEICHNIS -->
+    <section id="werkverzeichnis" class="section" aria-labelledby="works-title">
+      <div class="wrap">
+        <h2 id="works-title">Werkverzeichnis</h2>
+        <p class="muted">Filter nach Gattung oder Besetzung. Klicken für Details/Hörprobe.</p>
+        <div class="row" style="margin: .5rem 0 1rem">
+          <input id="workSearch" type="search" placeholder="Suchen (Titel, Jahr, Besetzung)" aria-label="Werk suchen" style="flex:1;border:1px solid var(--line);background:#0f1014;color:var(--text);padding:.6rem .8rem;border-radius:12px" />
+          <select id="workFilter" aria-label="Gattung filtern" style="border:1px solid var(--line);background:#0f1014;color:var(--text);padding:.6rem;border-radius:12px">
+            <option value="">Alle Gattungen</option>
+            <option>Orchester</option>
+            <option>Kammermusik</option>
+            <option>Vokal</option>
+            <option>Solo</option>
+            <option>Elektronik</option>
+          </select>
+        </div>
+        <div id="workList" class="grid grid-3"></div>
+      </div>
+    </section>
+
+    <!-- NOTENSHOP -->
+    <section id="shop" class="section" aria-labelledby="shop-title">
+      <div class="wrap">
+        <h2 id="shop-title">Notenshop</h2>
+        <p class="muted">Digitale Downloads (PDF) und gedruckte Ausgaben. Bezahlung z. B. via PayPal/Stripe (extern verlinkt).</p>
+        <div id="shopList" class="grid grid-3"></div>
+        <p class="muted" style="margin-top:1rem">Hinweis: Das sind Platzhalter, am Shop wird noch gebastelt</p>
+      </div>
+    </section>
+
+    <!-- MEDIEN: VIDEOS & AUDIOS -->
+    <section id="medien" class="section" aria-labelledby="media-title">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2 id="media-title">Videos</h2>
+          <div class="card">
+            <div style="position:relative;padding-top:56.25%">
+              <iframe title="YouTube Video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:14px"></iframe>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Audios</h2>
+          <div class="card">
+            <audio controls preload="none" style="width:100%">
+              <source src="audio/beispiel.mp3" type="audio/mpeg" />
+              Noch nichts verlinkt.
+            </audio>
+            <p class="muted" style="margin-top:.5rem">Fügen noch weitere <code>&lt;audio&gt;</code>-Player hinzu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section" aria-labelledby="blog-title">
+      <div class="wrap">
+        <h2 id="blog-title">Blog</h2>
+        <div id="blogList" class="grid grid-3"></div>
+      </div>
+    </section>
+
+    <!-- NEWS / TERMINE -->
+    <section id="news" class="section" aria-labelledby="news-title">
+      <div class="wrap">
+        <h2 id="news-title">News & Termine</h2>
+        <ul id="newsList" class="list"></ul>
+      </div>
+    </section>
+
+    <!-- KONTAKT (statisch) -->
+    <section id="kontakt" class="section" aria-labelledby="contact-title">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2 id="contact-title">Kontakt</h2>
+          <p class="muted">Für Anfragen zu Aufführungen, Auftragswerken und Lizenzen.</p>
+          <ul class="list">
+            <li>E-Mail: <a href="mailto:matthiaseberharter04@gmail.com">matthiaseberharter04@gmail.com</a></li>
+            <li>Telefon: <a href="tel:+43676847144833">+43 676 847 144833</a></li>
+            <li>Social: <a href="#">Instagram</a> · <a href="#">YouTube</a> · <a href="#">SoundCloud</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="muted">Du erreichst mich direkt per E-Mail oder Telefon. Ein Formular ist aktuell nicht aktiv.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap row">
+      <span>© <span id="year"></span> Matthias Eberharter</span>
+      <a class="right" href="#start" aria-label="Nach oben">Nach oben ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Jahr im Footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- WERKVERZEICHNIS DATEN ---
+    const works = [
+      { title:'Fuchs, du hast die Gans gestohlen', year:2025, genre:['Kammermusik','Elektronik'], duration:'7′', forces:'Streichquartett und fixed media', media:'' },
+      { title:'Christkönigmotette', year:2024, genre:['Vokal'], duration:'4′', forces:'Chor und Orgel', media:'' },
+      { title:'Hackbrettzyklus „Extrempositionen“', year:'2024–2025', genre:['Solo','Kammermusik'], duration:'45′ (Gesamt)', forces:'Tenorhackbrett Solo, Duo, Quartett', media:'' },
+      { title:'Resonanzen von gestern', year:2025, genre:['Solo','Elektronik'], duration:'3′', forces:'Klavier und fixed media', media:'' },
+      { title:'Diskussion', year:2023, genre:['Solo'], duration:'2′', forces:'Klavier', media:'' }
+    ];
+
+    const workList = document.getElementById('workList');
+    const workSearch = document.getElementById('workSearch');
+    const workFilter = document.getElementById('workFilter');
+
+    function renderWorks(){
+      const term = (workSearch?.value || '').toLowerCase();
+      const cat = workFilter?.value || '';
+      workList.innerHTML = '';
+
+      works
+        .filter(w => !cat || w.genre.includes(cat))
+        .filter(w => Object.values(w).join(' ').toLowerCase().includes(term))
+        .sort((a,b)=>{
+          const yearA = typeof a.year === 'string' ? parseInt(a.year) : a.year;
+          const yearB = typeof b.year === 'string' ? parseInt(b.year) : b.year;
+          return (yearB||0) - (yearA||0);
+        })
+        .forEach(w => {
+          const card = document.createElement('article');
+          card.className = 'card';
+          card.innerHTML = `
+            <div class="row">
+              ${w.genre.map(g => `<span class="pill">${g}</span>`).join('')}
+              <span class="pill">${w.year}</span>
+              <span class="pill">${w.duration}</span>
+            </div>
+            <h3>${w.title}</h3>
+            <p class="muted">Besetzung: ${w.forces}</p>
+            <div class="row">
+              ${w.media ? `<a class="button" href="${w.media}" target="_blank" rel="noopener">Hörprobe</a>` : ''}
+              <a class="button" href="#shop">Noten</a>
+            </div>
+          `;
+          workList.appendChild(card);
+        });
+    }
+    renderWorks();
+    workFilter.addEventListener('change', renderWorks);
+    workSearch.addEventListener('input', renderWorks);
+
+    // --- SHOP DATEN ---
+    const shopItems = [
+      { sku:'SQ1', title:'Trapez', price:'€ 5', cover:'Trapez_shop.png', link:'https://matthiaseberharter.gumroad.com/l/Trapez' },
+      { sku:'AU1', title:'Fuchs, du hast die Gans gestohlen', price:'€ 20', cover:'bilder/score2.jpg', link:'https://matthiaseberharter.gumroad.com/l/Fuchs' },
+      { sku:'KL1', title:'freie Meditation', price:'€ 5', cover:'bilder/score3.jpg', link:'https://matthiaseberharter.gumroad.com/l/meditation' }
+    ];
+    const shopList = document.getElementById('shopList');
+    function renderShop(){
+      shopList.innerHTML = '';
+      shopItems.forEach(item => {
+        const el = document.createElement('article');
+        el.className = 'card';
+        el.innerHTML = `
+          <img src="${item.cover}" alt="${item.title}" style="border-radius:12px;border:1px solid var(--line)">
+          <h3>${item.title}</h3>
+          <div class="row"><strong>${item.price}</strong><a class="button right" href="${item.link}" target="_blank" rel="noopener">Kaufen</a></div>
+        `;
+        shopList.appendChild(el);
+      });
+    }
+    renderShop();
+
+    // --- BLOG DATEN ---
+    const blogPosts = [
+      { title:'Gedanken 1', date:'2025-03-20', teaser:'Teaser zu Gedanken', link:'#' },
+      { title:'Skizzen zu Blabla', date:'2024-11-05', teaser:'Kompositionsprozess', link:'#' },
+      { title:'Kurzgeschichte bla', date:'2024-06-18', teaser:'Kurzgeschichte', link:'#' }
+    ];
+    const blogList = document.getElementById('blogList');
+    function renderBlog(){
+      blogList.innerHTML = '';
+      blogPosts
+        .sort((a,b)=> new Date(b.date)-new Date(a.date))
+        .forEach(p => {
+          const card = document.createElement('article');
+          card.className = 'card';
+          const d = new Date(p.date).toLocaleDateString('de-AT',{year:'numeric',month:'long',day:'numeric'});
+          card.innerHTML = `
+            <div class="pill">${d}</div>
+            <h3>${p.title}</h3>
+            <p class="muted">${p.teaser}</p>
+            <a class="button" href="${p.link}">Weiterlesen</a>
+          `;
+          blogList.appendChild(card);
+        });
+    }
+    renderBlog();
+
+    // --- NEWS DATEN ---
+    const news = [
+      { date:'2025-10-01', text:'Uraufführung „Resonanz von gestern“ – Alte Schmiede, 18:00' },
+      { date:'2026-01-26', text:'Uraufführung Orgelwerk - Michaelerkirche Wien' },
+      { date:'2025-01-23', text:'Uraufführung Podcast-Komposition - mdw' }
+    ];
+    const newsList = document.getElementById('newsList');
+    function renderNews(){
+      news
+        .sort((a,b)=> new Date(b.date)-new Date(a.date))
+        .forEach(n => {
+          const li = document.createElement('li');
+          const d = new Date(n.date).toLocaleDateString('de-AT',{year:'numeric',month:'long',day:'numeric'});
+          li.innerHTML = `<strong>${d}</strong><br><span class="muted">${n.text}</span>`;
+          newsList.appendChild(li);
+        });
+    }
+    renderNews();
+  </script>
+</body>
+</html>
