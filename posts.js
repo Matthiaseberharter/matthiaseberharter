@@ -7,10 +7,10 @@
 
 window.BLOG_POSTS = [
   {
-    id: "gedanken-1",
-    title: "Gedanken 1",
-    date: "2025-03-20",
-    teaser: "Ein paar Notizen zum Komponieren zwischen Struktur und Intuition.",
+    id: "vierteWand",
+    title: "<em>Fourth Wall Breaking<em> in der Musik",
+    date: "2025-09-24",
+    teaser: "Abriss und Überlegungen zu einem wenig benutzten kompositorischen Parameter",
     content: `
       <p>Hier steht dein erster Blogbeitrag. Du kannst <strong>HTML</strong> verwenden,
       z.&nbsp;B. <em>kursiv</em>, Überschriften, Listen, Bilder, YouTube-Embeds usw.</p>
