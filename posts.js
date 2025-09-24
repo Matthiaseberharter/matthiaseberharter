@@ -8,7 +8,7 @@
 window.BLOG_POSTS = [
   {
     id: "vierteWand",
-    title: "<em>Fourth Wall Breaking<em> in der Musik",
+    title: "<em>Fourth Wall Breaking</em> in der Musik",
     date: "2025-09-24",
     teaser: "Abriss und Überlegungen zu einem wenig benutzten kompositorischen Parameter",
     content: `
