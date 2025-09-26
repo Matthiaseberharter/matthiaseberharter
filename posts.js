@@ -9,10 +9,9 @@ window.BLOG_POSTS = [
   {
     id: "vierte-wand",
     title: "<em>Fourth Wall Breaking</em> in der Musik",
-    date: "2025-09-24",
+    date: "2025-09-26",
     teaser: "Historischer Abriss und Gedanken zu einer wenig verwendeten kompositorischen Technik. Von Haydn bis Eberharter",
     content: `
-content: `
   <h2>Fourth Wall Breaking</h2>
 
   <p>Wenn Oliver Hardy in den alten <em>Laurel &amp; Hardy</em>-Filmen direkt in die Kamera blickt, 
@@ -109,7 +108,7 @@ content: `
   {
     id: "klavierschmiede-prozess",
     title: "Ein Kompositionsprozess im Überblick",
-    date: "2025-09-26",
+    date: "2025-07-26",
     teaser: "Selbstanalyse von Werk und Arbeitsprozess am Beispiel \"Klavierschmiede\": Vom Auftrag zur Aufführung",
     content: `
       <p>Dein zweiter Beitrag …</p>
