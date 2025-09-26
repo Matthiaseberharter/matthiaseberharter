@@ -102,8 +102,6 @@ window.BLOG_POSTS = [
   subtiler Irritation und existenzieller Verunsicherung. Wichtig ist, es mit Verantwortung 
   einzusetzen: unangenehm darf es sein, traumatisierend nicht.</p>
 `
-
-    `
   },
   {
     id: "klavierschmiede-prozess",
@@ -111,7 +109,6 @@ window.BLOG_POSTS = [
     date: "2025-07-26",
     teaser: "Selbstanalyse von Werk und Arbeitsprozess am Beispiel \"Klavierschmiede\": Vom Auftrag zur Aufführung",
     content: `
-      <p>Dein zweiter Beitrag …</p>
     `
   },
   {
@@ -120,7 +117,7 @@ window.BLOG_POSTS = [
     date: "2022-12-11",
     teaser: "Neben Musik schreibe ich auch gelegentlich Texte. Diese Kurzgeschichte wurde vom <em>Mölltaler Kurzgeschichten Festival 2023</em> prämiert und veröffentlicht",
     content: `
-  <p> Das <em>Mölltaler Kurzgeschichten Festival</em> schreibt jedes Jahr einen Wettbewerb aus, bei dem Kurzgeschichten mit Bezug zu einem bestimmten Wort eingereicht werden können. 2023 war dieses Wort „Trotzdem“.</p>
+    <p>Das <em>Mölltaler Kurzgeschichten Festival</em> schreibt jedes Jahr einen Wettbewerb aus, bei dem Kurzgeschichten mit Bezug zu einem bestimmten Wort eingereicht werden können. 2023 war dieses Wort „Trotzdem“.</p>
     <h2>DIE PUPPE</h2>
     <p><em>Von Matthias Eberharter</em></p>
 
